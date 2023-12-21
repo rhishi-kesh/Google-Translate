@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Google Translator</title>
+    <style type="text/css">
+        body{
+            padding: 0;
+            margin: 0px 20px;
+            top: 0 !important;
+        }
+        #google_translate_element select {
+            background-color: #f6edfd;
+            color: #383ffa;
+            border: none;
+            border-radius: 3px;
+            padding: 6px 8px
+        }
+        .goog-logo-link{
+            display:none !important;
+        }
+        .goog-te-gadget{
+            color: transparent!important;
+        }
+        .goog-te-banner-frame{
+            display:none !important;
+        }
+        .VIpgJd-ZVi9od-l4eHX-hSRGPd{
+            display: none;
+        }
+        .VIpgJd-ZVi9od-ORHb-OEVmcd{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Web Page</h1>
+    <p>Hello everybody!</p>
+    <p>Translate this page:</p>
+
+    <div id="google_translate_element"></div>
+
+
+    <p>You can translate the content of this page by selecting a language in the select box.</p>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        autoDisplay: 'true',
+        includedLanguages:'hi,en,bn,id,fr', 
+        layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+        }, 'google_translate_element');
+       
+        }       
+    </script>
+
+</body>
+</html>
